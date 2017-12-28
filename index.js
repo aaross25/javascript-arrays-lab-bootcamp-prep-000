@@ -29,12 +29,12 @@ function destructivelyRemoveFirstKitten(){
 
 function appendKitten(name){
   var kittens = ["Milo", "Otis", "Garfield"]
-  var kittens2 = kittens.push(name)
-  return kittens2
+  return [...kittens, name]
 }
 
 function prependKitten(name){
-  
+  var kittens = ["Milo", "Otis", "Garfield"]
+  return [name, ...kittens]
   
 }
 
